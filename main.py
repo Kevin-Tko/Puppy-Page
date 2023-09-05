@@ -3,8 +3,6 @@ import os
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate  import Migrate
 
-
-
 ######  Creating my app  ######
 app = Flask(__name__, template_folder='templates')
 app.config['SECRET_KEY'] = 'mysecretkey'
@@ -18,4 +16,4 @@ db = SQLAlchemy(app)
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=5000)
+    app.run(host='0.0.0.0', debug=True)
